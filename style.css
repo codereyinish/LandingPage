@@ -74,7 +74,7 @@ nav>ul{
  .IntroContent
  {
     width: 462px;
-    /* background-color: red; */
+    /* background-color: red;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,6 +86,7 @@ nav>ul{
     /* bcoz browser default line height is 1.2 so more gap between "This" and "Awesome" */
     font-weight: bold;
     color: #F9FAF8;
+
     /* margin-bottom: 10px;-- replaced by gap in line 79 😅 */
  }
 
