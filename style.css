@@ -3,7 +3,6 @@
     padding: 0;
     border: 0;
     /* color: white; */
-}
 a{
     text-decoration: none;
 }
@@ -48,6 +47,8 @@ nav>.logo{
     font-weight: bolder;
     color:#F9FAF8;
     text-decoration: none;
+    cursor: pointer;
+    
 }
 nav>ul{
     list-style-type: none;
@@ -59,7 +60,14 @@ nav>ul{
  {
     font-size: 17px;
     color:#E5E7EB;
+    cursor: pointer;
  }
+/* both selector requires separate hover 🤨 */
+ nav>.logo:hover, nav>ul>li>a:hover{
+    color: #2c838b;
+    
+   }
+
  .Intro
  {
      height: 240px;
@@ -96,16 +104,19 @@ nav>ul{
  }
  .IntroContent>button,.Section4>.container4>button
  {
-    width: 92px;
+    width: 98px;
     height: 28px;
+    padding: 0px 5px;
     text-align: center;
-    background-color: #3882F6;
+    background-color: #254447;
     color: white;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     border: 0.5px solid white;
-
+ }
+ .IntroContent>button:hover{
+    border: 1px solid white;
  }
 
  /* Main */
@@ -218,12 +229,13 @@ nav>ul{
 }
 .container4
 {
+    margin: 20px 0;
     padding:2.5% 6%;
-    width: 45%;
+    width: 690px;
     background-color: #3882F6;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 60px;
     border-radius: 24px;
 }
 .Section4>.container4>.text 
@@ -236,18 +248,33 @@ nav>ul{
     font-size: 21px;
     color:white;
     font-weight: bolder;
-    line-height: 1.5;
+    line-height: 1.8;
+}
+.text>strong
+{
+    font-size: 19px;
+    cursor: pointer;
+    margin: 0px 3px;
 }
 .Section4>.container4>button
 {
     /* values from previous button */
-    border: 1px solid white;
+    background-color: #3882F6;
     background-color: white;
     color: black;
-    border: 1px solid black;
-    width: fit-content;
+    border: 0.5px solid black;
+    width: 110px;
+    min-width: 110px;
+    /* max-width: fit-content; */
+    height: 28px;
     padding-left: 12px;
     padding-right: 12px;
+    position: relative;
+    /* to make it align with mini texts */
+    top: 7px;
+}
+.Section4>.container4>button:hover{
+    border: 1.5px solid black;
 }
 footer{
     color: white;
@@ -257,4 +284,3 @@ footer{
     justify-content: center;
     align-items: center;  
 }
-
