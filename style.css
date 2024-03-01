@@ -219,6 +219,7 @@ nav>ul{
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    border-radius: 24px;
 }
 .Section4>.container4>.text 
 {
@@ -236,16 +237,6 @@ nav>ul{
     /* values from previous button */
     border: 1px solid white;
 }
-
-
-
- 
-
-
- 
- 
- 
-
 footer{
     color: white;
     flex-shrink: 0;
