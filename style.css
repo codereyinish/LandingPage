@@ -121,11 +121,12 @@ nav>ul{
  .Section2
  {  
    
-    height: 370px;
+    height: 390px;
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 10px;
 
  }
  .Section2>.heading
@@ -169,7 +170,7 @@ nav>ul{
     text-align: center;
 }
 .Quote
-{   height: 340px;
+{   height: 350px;
     background-color:#E5E7EB;
     display: flex;
     flex-direction: column;
