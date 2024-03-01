@@ -187,7 +187,7 @@ nav>ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(./images/QuotefromElonMusk.jpg) no-repeat content-box  center/contain;
+    background: url(images/QuotefromElonMusk.jpg) no-repeat content-box  center/contain;
     background-color:#E5E7EB;
     opacity: 0.9;
     
