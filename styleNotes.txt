@@ -1,0 +1,64 @@
+/* what will happen when i decrease the size of flex container and there is one flex item centered horizontally and vertically(so i used flex), now there is space on both side , now when i decreased the flex container , the space will be consumed but i dont want space to be consumed alone, nor i want flex item 's width to decrease alone so i set padding as break , in header line 16 
+now after this item's(nav's and .Intro) or .container's width needs to be decreased
+now .container is doesnt need to be flex parent
+its two child <nav> and .Intro are block items so they take the whole width.
+so when .container's size is to be decreased, two child item's width also need to be decreased, but before that justify content will be consumed
+we
+We are done with WIDTH
+now about height, 
+Width (think from outward to inward) bcoz, width of the child items are based on parent's width if not set
+
+In height, we go with the line height of the child items
+
+Lets add height to <nav> , NO🤨, to div.container , NO🤨, whole header*
+we don't want to decrease gap between logo and webpage's end so we set it as box property, margin
+
+In case height of the header changes in responsive website---
+SInce i have to create gap between nav and intro content so i have to introduce them as two separate blocks or items
+if block- then margin bottom
+if flex- then vertical gap((minimum) or margin bottom  between nav and .Intro,  PLUS use Justify-content:flex-start (not cross ), 
+
+QUESTION; when to use gap , when to use margin-bottom, both wont be encroached while shrinking, gap in line 36 vs margin-bottom in line 45?
+
+Lets make .Intro a expandable item and header not expandable nor shrink. For that lets make .container flex parent
+/* Line33: to layout flex item previously as block in whole width format, we used flex direction:column 
+\Making .Intro grow all
+
+
+Now inside .Intro
+
+two separate flex items, 1) .IntroContent and 2) img
+img wont shrink , so if .Intro needs to shrink, first space of justify content is consumed then width of the .IntroContent... content will grow vertically and consumes vertical justify content space
+
+setting width for .IntroContent
+Inside .Intro , justify content : space-between two put .IntroContent and <img> at right and left and space in between
+creating gap between img and .IntroContent
+downloaded gifs , resized
+and put it in <img>
+Now Inside .IntroContent
+
+setting .IntroContent and <img> gif on same size(full height) inside .IntroContent
+
+Since I want to put button always on the bottom of the div.Intro(bcoz it levels uo with <img> gif and plus I  want to use gap instead of margin-bottom between herotext and childtext so I set .Intro Content as FLEX 
+
+Background color only applies inside content box, padding is outside content box so some part of button white error,
+still white portion left, bcoz html buttons have by default border, correction in line 4
+
+
+
+Now into main 
+<header> size is always same, same for footer , <main> will take all remaining space
+
+Since we might want to grow image div vertically inside .SectionWrappper (yes block also grows horizontally but we also want to make sure gap between images will be consistent with resizing which is difficult with individual margin between image box, I DONT WANT TO SPECIFY HEIGHT FOR .Sec2iiWraapper so we decide to use .Section as flex,
+
+Since we want center   .Section2 along cross axis so better we use align self:center;
+
+if a screen is resized , then align  items space of .section2iiWrapper is consumed, it wont impact width of the square mini-containers.
+now inside .Sec2iiWrapper 
+
+now inside .minicotnainer,using .minicontainer as a common wrapper box to contain both img and div.text bcoz i dont want text to flow outside the image..
+
+Inside the .minicontainer
+I want the width of the container based on the width of the image, (width of image = 170px), now i set width of .minicontainer as max-content.
+
+*/ 
